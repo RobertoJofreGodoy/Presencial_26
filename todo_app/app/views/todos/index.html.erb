@@ -1,6 +1,6 @@
 <h1> INDEX</h1>
 
-<table class="well">
+<table class="table table-well">
     <thead>
         <tr>
             <th>Description </th>
@@ -13,10 +13,10 @@
         <tr>
             <td> <%= todo.description %></td>
             <td> <%= todo.completed%></td>
-            <td> <%= link_to ' SHOW', todo%> </td>
-            <td> <%= link_to ' EDIT', edit_path(todo) %> </td>
-            <td> <%= link_to ' DESTROY', todo, method: :delete %> </td>
-            <td> <%= link_to ' COMPLETE', complete_path(todo) %> </td>
+            <td> <%= link_to ' SHOW', todo, :class => 'btn btn-primary'%> </td>
+            <td> <%= link_to ' EDIT', edit_path(todo),:class => 'btn btn-primary' %> </td>
+            <td> <%= link_to ' COMPLETE', complete_path(todo),:class => 'btn btn-success' %> </td>
+            <td> <%= link_to ' DESTROY', todo, method: :delete,:class => 'btn btn-warning' %> </td>
         </tr>
     <%end%>
     </tbody>
