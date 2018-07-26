@@ -16,6 +16,7 @@
             <td> <%= todo.completed%></td>
             <td> <%= link_to ' SHOW', todo%> </td>
             <td> <%= link_to ' EDIT', edit_path(todo) %> </td>
+            <td> <%= link_to ' DESTROY', todo, method: :delete %> </td>
         </tr>
     <%end%>
     </tbody>
