@@ -42,7 +42,6 @@ class TodosController < ApplicationController
 
     def list
         @todos = Todo.all
-
     end
 
     private
