@@ -15,7 +15,7 @@
             <td> <%= todo.description %></td>
             <td> <%= todo.completed%></td>
             <td> <%= link_to ' SHOW', todo%> </td>
-            <td> <%= link_to ' EDIT', todo%> </td>
+            <td> <%= link_to ' EDIT', edit_path(todo) %> </td>
         </tr>
     <%end%>
     </tbody>
