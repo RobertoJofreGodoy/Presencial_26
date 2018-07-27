@@ -1,10 +1,2 @@
 <h1> NEW</h1>
-<%= form_with model: @todo, local: true do |f|%>
-    <%= f.label :description, "Description" %>
-	<%= f.text_field :description %>
-	<br>
-	<%= f.label :completed, "Completed" %>
-	<%= f.check_box :completed%>
-	<br>
- 	<%= f.submit "CREAR", :class => 'btn btn-primary' %>
-<%end%>
+<%= render 'form' %>
